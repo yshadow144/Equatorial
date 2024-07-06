@@ -683,7 +683,6 @@ function library:Introduction()
     local barCorner = Instance.new("UICorner")
     local barLayout = Instance.new("UIListLayout")
     local EquatorialXLogo = Instance.new("ImageLabel")
-    local hashLogo = Instance.new("ImageLabel")
     local EquatorialX = Instance.new("TextLabel")
     local text = Instance.new("TextLabel")
     local pageLayout = Instance.new("UIListLayout")
@@ -752,18 +751,6 @@ function library:Introduction()
     EquatorialXLogo.ImageColor3 = Color3.fromRGB(242,32,134)
     EquatorialXLogo.ImageTransparency = 1
     
-    hashLogo.Name = "hashLogo"
-    hashLogo.Parent = background
-    hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
-    hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    hashLogo.BackgroundTransparency = 1.000
-    hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    hashLogo.Size = UDim2.new(0, 150, 0, 150)
-    hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
-    hashLogo.ImageColor3 = Color3.fromRGB(242,32,134)
-    hashLogo.ImageTransparency = 1
-    
     EquatorialX.Name = "EquatorialX"
     EquatorialX.Parent = background
     EquatorialX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -774,19 +761,6 @@ function library:Introduction()
     EquatorialX.TextColor3 = Color3.fromRGB(124, 124, 124)
     EquatorialX.TextSize = 10.000
     EquatorialX.TextTransparency = 1
-    
-    text.Name = "text"
-    text.Parent = background
-    text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    text.BackgroundTransparency = 1.000
-    text.Position = UDim2.new(0.912751675, 0, 0, 0)
-    text.Size = UDim2.new(0, 26, 0, 21)
-    text.Font = Enum.Font.Code
-    text.Text = "hash"
-    text.TextColor3 = Color3.fromRGB(124, 124, 124)
-    text.TextSize = 10.000
-    text.TextTransparency = 1
-    text.RichText = true
     
     pageLayout.Name = "pageLayout"
     pageLayout.Parent = introduction
@@ -815,10 +789,6 @@ function library:Introduction()
     wait(2)
     TweenService:Create(EquatorialXLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.2)
-    TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
-    wait(2)
-    TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
-    wait(.1)
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(EquatorialX, TweenTable["introduction"], {TextTransparency = 1}):Play()
