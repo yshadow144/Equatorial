@@ -757,7 +757,7 @@ function library:Introduction()
     EquatorialX.BackgroundTransparency = 1.000
     EquatorialX.Size = UDim2.new(0, 80, 0, 21)
     EquatorialX.Font = Enum.Font.Code
-    EquatorialX.Text = "powered by EquatorialX"
+    EquatorialX.Text = "EquatorialX"
     EquatorialX.TextColor3 = Color3.fromRGB(124, 124, 124)
     EquatorialX.TextSize = 10.000
     EquatorialX.TextTransparency = 1
